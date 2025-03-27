@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>students profiles</title>
+    <link rel="stylesheet" href="yuan_tanglao.css">
+</head>
+<body>
+    <header>
+        <h1>Bulacan State Univeristy</h1>
+        <h2>School Year: 2024-2025</h2>
+    </header>
+
+    <main class="container" id="students"></main>
+
+    <script>
+        const xmlPath = 'yuan_tanglao.xml';  
+
+        async function loadXML() {
+            try {
+                const response = await fetch(xmlPath);
+                
+                if (!response.ok) {
+                    throw new Error(`Failed to load XML: ${response.status}`);
+                }
+
+                const xmlText = await response.text();
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(xmlText, "application/xml");
+
+                const students = xmlDoc.getElementsByTagName("student");
+                const container = document.getElementById("students");
+
+                if (students.length === 0) {
+                    container.innerHTML = "<p>No students found in the XML file.</p>";
+                    return;
+                }
+
+                for (let student of students) {
+                    const picture = student.getElementsByTagName("picture")[0]?.textContent || 'images/placeholder.jpg';
+                    const name = student.getElementsByTagName("name")[0]?.textContent || 'Unknown';
+                    const course = student.getElementsByTagName("course")[0]?.textContent || 'N/A';
+                    const yearLevel = student.getElementsByTagName("year_level_section")[0]?.textContent || 'N/A';
+                    const adviser = student.getElementsByTagName("adviser")[0]?.textContent || 'N/A';
+
+                    const card = document.createElement("div");
+                    card.classList.add("user-card");
+
+                    card.innerHTML = `
+                        <img src="${picture}" alt="${name}" onerror="this.src='images/placeholder.jpg';">
+                        <div class="user-info">
+                            <p><strong>Name:</strong> ${name}</p>
+                            <p><strong>Course:</strong> ${course}</p>
+                            <p><strong>Section:</strong> ${yearLevel}</p>
+                            <p><strong>Adviser:</strong> ${adviser}</p>
+                        </div>
+                    `;
+
+                    container.appendChild(card);
+                }
+            } catch (error) {
+                console.error("Error loading XML:", error);
+                document.getElementById("students").innerHTML = `<p>Error loading students: ${error.message}</p>`;
+            }
+        }
+
+        window.onload = loadXML;
+    </script>
+</body>
+</html>

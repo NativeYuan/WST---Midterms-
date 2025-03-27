@@ -1,0 +1,85 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<students>
+    <student>
+        <picture>https://www.facebook.com/photo/?fbid=3390451984301811set=a.161799210500454</picture>
+        <name>Makisig Bagsik</name>
+        <course>BSIT</course>
+        <year_level_section>3AG1</year_level_section>
+        <adviser>Teresita Mangahas</adviser>
+        <school_year>2024-2025</school_year>
+    </student>
+    <student>
+        <picture>https://www.facebook.com/photo/?fbid=3390451984301811set=a.161799210500454</picture>
+        <name>Malaya Liwanag</name>
+        <course>BSIT</course>
+        <year_level_section>3AG1</year_level_section>
+        <adviser>Teresita Mangahas</adviser>
+        <school_year>2024-2025</school_year>
+    </student>
+    <student>
+        <picture>https://www.facebook.com/photo/?fbid=3390451984301811set=a.161799210500454</picture>
+        <name>Hiraya Amihan</name>
+        <course>BSCS</course>
+        <year_level_section>3AG1</year_level_section>
+        <adviser>Teresita Mangahas</adviser>
+        <school_year>2024-2025</school_year>
+    </student>
+    <student>
+        <picture>https://www.facebook.com/photo/?fbid=3390451984301811set=a.161799210500454</picture>
+        <name>Bantay Lakandula</name>
+        <course>BSIT</course>
+        <year_level_section>3AG1</year_level_section>
+        <adviser>Teresita Mangahas</adviser>
+        <school_year>2024-2025</school_year>
+    </student>
+    <student>
+        <picture>https://www.facebook.com/photo/?fbid=3390451984301811set=a.161799210500454</picture>
+        <name>Luntian Silab</name>
+        <course>BSIS</course>
+        <year_level_section>3AG1</year_level_section>
+        <adviser>Teresita Mangahas</adviser>
+        <school_year>2024-2025</school_year>
+    </student>
+    <student>
+        <picture>https://www.facebook.com/photo/?fbid=3390451984301811set=a.161799210500454</picture>
+        <name>Haraya Alon</name>
+        <course>BSIT</course>
+        <year_level_section>3AG1</year_level_section>
+        <adviser>Teresita Mangahas</adviser>
+        <school_year>2024-2025</school_year>
+    </student>
+    <student>
+        <picture>https://www.facebook.com/photo/?fbid=3390451984301811set=a.161799210500454</picture>
+        <name>Dalisay Habi</name>
+        <course>BSCS</course>
+        <year_level_section>3AG1</year_level_section>
+        <adviser>Teresita Mangahas</adviser>
+        <school_year>2024-2025</school_year>
+    </student>
+    <student>
+        <picture>https://www.facebook.com/photo/?fbid=3390451984301811set=a.161799210500454</picture>
+        <name>Giting Sinag</name>
+        <course>BSIS</course>
+        <year_level_section>3AG1</year_level_section>
+        <adviser>Teresita Mangahas</adviser>
+        <school_year>2024-2025</school_year>
+    </student>
+    <student>
+        <picture>https://www.facebook.com/photo/?fbid=3390451984301811set=a.161799210500454</picture>
+        <name>Sampaguita Alaon</name>
+        <course>BSIT</course>
+        <year_level_section>3AG1</year_level_section>
+        <adviser>Teresita Mangahas</adviser>
+        <school_year>2024-2025</school_year>
+    </student>
+    <student>
+        <picture>https://www.facebook.com/photo/?fbid=3390451984301811set=a.161799210500454</picture>
+        <name>Bagwis Tanaw</name>
+        <course>BSCS</course>
+        <year_level_section>3AG1</year_level_section>
+        <adviser>Teresita Mangahas</adviser>
+        <school_year>2024-2025</school_year>
+    </student>
+</students>
